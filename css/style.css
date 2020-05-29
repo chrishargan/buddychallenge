@@ -7,3 +7,7 @@ body {
   margin: 0;
   place-items: center center;
 }
+
+#carouselExampleControls {
+  padding-left: 10rem;
+}
