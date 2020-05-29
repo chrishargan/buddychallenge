@@ -6,6 +6,8 @@ body {
   height: 100vh;
   margin: 0;
   place-items: center center;
+  font-family: "Abril Fatface", cursive;
+  background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
 }
 
 #carouselExampleControls {
