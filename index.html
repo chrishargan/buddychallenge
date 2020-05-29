@@ -16,10 +16,9 @@
     <title>Interactive-page challenge</title>
   </head>
   <body>
-    <header>
-      <title>"Materialism" Exhibition</title>
-    </header>
-    <div class="container">
+    <h1>"Materialism" Exhibition</h1>
+
+    <div class="container w-75">
       <div class="row">
         <div class="carousel-wrapper">
           <div class="customCarousel">
@@ -66,49 +65,71 @@
     </div>
 
     <!-- Tab content -->
-    <div id="eventinfo">
-      <div class="container">
-        <h3>Event info</h3>
-        <ul class="nav nav-tabs">
-          <li class="active p-1"><a href="#">Home</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Dates</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <br />
-        <p>
-          This is Placeholder info
-        </p>
+    <ul class="nav nav-tabs" id="info" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="location"
+          data-toggle="tab"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="dates"
+          data-toggle="tab"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+          >Profile</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="contact"
+          data-toggle="tab"
+          role="tab"
+          aria-controls="contact"
+          aria-selected="false"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="where"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        text will go here
+      </div>
+      <div
+        class="tab-pane fade"
+        id="when"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        and also here
+      </div>
+      <div
+        class="tab-pane fade"
+        id="form"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+      >
+        then also here
       </div>
     </div>
-    <div id="contact"></div>
-    <footer></footer>
 
     <!-- the tabs section -->
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">
-        London
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div>
 
-    <!-- Tab content -->
-    <div id="Location" class="tabcontent">
-      <h3>Location</h3>
-      <p>Place holder info</p>
-    </div>
-
-    <div id="Date" class="tabcontent">
-      <h3>Date</h3>
-      <p>Placeholder info</p>
-    </div>
-
-    <div id="Contact" class="tabcontent">
-      <h3>Contact us</h3>
-      <p>Placeholder info</p>
-    </div>
-
+    <footer></footer>
     <script src="index.js"></script>
   </body>
 </html>
