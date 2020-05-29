@@ -6428,11 +6428,11 @@ a.close.disabled {
   color: #212529;
 }
 
-.carousel {
+.customCarousel {
   position: relative;
 }
 
-.carousel.pointer-event {
+.customCarousel.pointer-event {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }

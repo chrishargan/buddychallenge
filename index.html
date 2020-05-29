@@ -13,19 +13,16 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
 
     <title>Interactive-page challenge</title>
-  </head>
-  <body>
-    <header>
-      <title>"Materialism" Exhibition</title>
-    </header>
-    <div
-      id="carouselExampleControls"
-      class="carousel slide container d-flex"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/IMG_0500JPG.jpg" class="d-block w-50" alt="sculpture" />
+</head>
+<body>
+<header>
+    <title>"Materialism" Exhibition</title>
+</header>
+<div class="carousel slide carousel-wrapper container d-flex"
+>
+    <div class="carousel-inner customCarousel">
+        <div>
+            <img src="img/IMG_0500JPG.jpg" class="d-block w-50 carousel__photo initial" alt="sculpture"/>
         </div>
         <div class="carousel-item">
           <img src="img/IMG_1273JPG.jpg" class="d-block w-50" alt="sculpture" />
@@ -61,21 +58,28 @@
     </div>
 
     <!-- the tabs section -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">
+        London
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
 
     <!-- Tab content -->
+    <div id="Location" class="tabcontent">
+      <h3>Location</h3>
+      <p>Place holder info</p>
+    </div>
 
-    <div class="container">
-      <h3>Event info</h3>
-      <ul class="nav nav-tabs">
-        <li class="active p-1"><a href="#">Home</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">Dates</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <br />
-      <p>
-        This is Placeholder info
-      </p>
+    <div id="Date" class="tabcontent">
+      <h3>Date</h3>
+      <p>Placeholder info</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact us</h3>
+      <p>Placeholder info</p>
     </div>
 
     <script src="index.js"></script>
