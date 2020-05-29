@@ -9,7 +9,13 @@ body {
   font-family: "Abril Fatface", cursive;
   background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
 }
+h1 {
+  color: darkred;
+}
 
 #carouselExampleControls {
   padding-left: 10rem;
+}
+footer {
+  font-size: 2rem;
 }
