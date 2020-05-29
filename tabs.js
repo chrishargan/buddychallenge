@@ -6,6 +6,7 @@ function onTabClick(event) {
     event.target.className += ' active';
     document.querySelectorAll('[role="tabpanel"]').forEach(function (el){
         el.classList.remove("active");
+        el.classList.remove("show");
     });
     document.getElementById(event.target.href.split('#')[1]).className += ' show active';
 }
