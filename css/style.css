@@ -1,4 +1,9 @@
 body {
-  align-items: center;
-  align-content: space-around;
+  align-content: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
